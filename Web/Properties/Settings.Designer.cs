@@ -32,5 +32,15 @@ namespace Web.Properties {
                 return ((string)(this["bdConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\bd.mdb")]
+        public string bdConnectionString1 {
+            get {
+                return ((string)(this["bdConnectionString1"]));
+            }
+        }
     }
 }
