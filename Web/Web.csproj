@@ -53,6 +53,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bdDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataGridModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridModules.Designer.cs">
+      <DependentUpon>DataGridModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridNapolnenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridNapolnenie.Designer.cs">
+      <DependentUpon>DataGridNapolnenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridVerstka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridVerstka.Designer.cs">
+      <DependentUpon>DataGridVerstka.cs</DependentUpon>
+    </Compile>
     <Compile Include="Enter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,23 +83,23 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataGridVerstka.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataGridVerstka.Designer.cs">
-      <DependentUpon>DataGridVerstka.cs</DependentUpon>
-    </Compile>
     <Compile Include="GlobalTrash.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataGridModules.resx">
+      <DependentUpon>DataGridModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridNapolnenie.resx">
+      <DependentUpon>DataGridNapolnenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridVerstka.resx">
+      <DependentUpon>DataGridVerstka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Enter.resx">
       <DependentUpon>Enter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DataGridVerstka.resx">
-      <DependentUpon>DataGridVerstka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -61,13 +61,23 @@
             this.модулиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.модулиTableAdapter = new Web.bdDataSetTableAdapters.МодулиTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.SEO.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.модулиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // SEO
@@ -276,6 +286,14 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.listBox3);
+            this.tabPage3.Controls.Add(this.button7);
+            this.tabPage3.Controls.Add(this.checkBox7);
+            this.tabPage3.Controls.Add(this.button8);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.numericUpDown3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -352,6 +370,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Открыть бд";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -400,6 +419,84 @@
             this.textBox2.Size = new System.Drawing.Size(100, 47);
             this.textBox2.TabIndex = 14;
             // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(8, 6);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown3.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(134, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Количество страниц";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(7, 33);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(233, 17);
+            this.checkBox7.TabIndex = 2;
+            this.checkBox7.Text = "Поиск и обработка информации студией";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // listBox3
+            // 
+            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 16;
+            this.listBox3.Items.AddRange(new object[] {
+            "Стоимость за ед. блока/товара:",
+            "Поиск информации - 300р. за страницу",
+            "Добавление страниц - 500р. за страницу"});
+            this.listBox3.Location = new System.Drawing.Point(306, 8);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(289, 116);
+            this.listBox3.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(85, 56);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 47);
+            this.textBox3.TabIndex = 18;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(3, 162);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 47);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Заказать";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(3, 109);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 47);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "Открыть бд";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(3, 56);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 47);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Рассчитать";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,8 +515,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.модулиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -458,5 +558,13 @@
         private System.Windows.Forms.BindingSource модулиBindingSource;
         private bdDataSetTableAdapters.МодулиTableAdapter модулиTableAdapter;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
     }
 }

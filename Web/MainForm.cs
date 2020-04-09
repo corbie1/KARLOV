@@ -31,6 +31,10 @@ namespace Web
         int contactForm = 0;
         int OnlineChat = 0;
         int mail = 0;
+        int pages = 0;
+        int searches = 0;
+        int pages_number = 0;
+        string searches_block = "none";
 
         public MainForm()
         {
@@ -86,6 +90,8 @@ namespace Web
 
         private void button4_Click(object sender, EventArgs e)
         {
+            textBox4.Clear();
+
             slider_number = (int)(numericUpDown1.Value);
             animation_number = (int)(numericUpDown2.Value);
 
@@ -122,6 +128,7 @@ namespace Web
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox2.Clear();
             allPrice = 0;
             if (checkBox4.Checked)
             {
@@ -154,6 +161,48 @@ namespace Web
         private void button6_Click(object sender, EventArgs e)
         {
             string query = $"INSERT INTO Модули (Имя, Фамилия, [Форма обратной связи], [Настройка почты], [Онлайн чат], Цена) VALUES ('{GlobalTrash.Username}', '{GlobalTrash.Fam}', '{contactForm}', '{mail}', '{OnlineChat}','{allPrice}')";
+
+            OleDbCommand command = new OleDbCommand(query, myConnection);
+
+            command.ExecuteNonQuery();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textBox3.Clear();
+
+            allPrice = 0;
+            pages_number = (int)(numericUpDown3.Value);
+
+            pages = 500;
+            searches = 300;
+            if(checkBox7.Checked) {
+                allPrice = (pages + searches) * pages_number;
+                searches_block = "+";
+            }
+            else
+            {
+                allPrice = pages * pages_number;
+            }
+          
+                textBox3.Text = allPrice.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DataGridModules frm = new DataGridModules();
+            frm.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            DataGridNapolnenie frm = new DataGridNapolnenie();
+            frm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string query = $"INSERT INTO Наполнение (Имя, Фамилия, [Количество страниц], [Поиск и обработка информации], Цена) VALUES ('{GlobalTrash.Username}', '{GlobalTrash.Fam}', '{pages_number}', '{searches_block}','{allPrice}')";
 
             OleDbCommand command = new OleDbCommand(query, myConnection);
 

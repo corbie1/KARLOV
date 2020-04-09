@@ -1,6 +1,6 @@
 ﻿namespace Web
 {
-    partial class DataGridVerstka
+    partial class DataGridModules
     {
         /// <summary>
         /// Required designer variable.
@@ -31,20 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.bdDataSet = new Web.bdDataSet();
-            this.версткаBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.версткаTableAdapter = new Web.bdDataSetTableAdapters.ВерсткаTableAdapter();
+            this.модулиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.модулиTableAdapter = new Web.bdDataSetTableAdapters.МодулиTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.имяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фамилияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.слайдерыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.анимированныеБлокиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.локализацияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.сложнаяСтруктураDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.геопривязкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.формаОбратнойСвязиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.настройкаПочтыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.онлайнЧатDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.версткаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.модулиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -55,16 +53,14 @@
             this.кодDataGridViewTextBoxColumn,
             this.имяDataGridViewTextBoxColumn,
             this.фамилияDataGridViewTextBoxColumn,
-            this.слайдерыDataGridViewTextBoxColumn,
-            this.анимированныеБлокиDataGridViewTextBoxColumn,
-            this.локализацияDataGridViewTextBoxColumn,
-            this.сложнаяСтруктураDataGridViewTextBoxColumn,
-            this.геопривязкаDataGridViewTextBoxColumn,
+            this.формаОбратнойСвязиDataGridViewTextBoxColumn,
+            this.настройкаПочтыDataGridViewTextBoxColumn,
+            this.онлайнЧатDataGridViewTextBoxColumn,
             this.ценаDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.версткаBindingSource;
+            this.dataGridView2.DataSource = this.модулиBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(13, 13);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(935, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(743, 150);
             this.dataGridView2.TabIndex = 0;
             // 
             // bdDataSet
@@ -72,14 +68,14 @@
             this.bdDataSet.DataSetName = "bdDataSet";
             this.bdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // версткаBindingSource
+            // модулиBindingSource
             // 
-            this.версткаBindingSource.DataMember = "Верстка";
-            this.версткаBindingSource.DataSource = this.bdDataSet;
+            this.модулиBindingSource.DataMember = "Модули";
+            this.модулиBindingSource.DataSource = this.bdDataSet;
             // 
-            // версткаTableAdapter
+            // модулиTableAdapter
             // 
-            this.версткаTableAdapter.ClearBeforeFill = true;
+            this.модулиTableAdapter.ClearBeforeFill = true;
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -99,35 +95,23 @@
             this.фамилияDataGridViewTextBoxColumn.HeaderText = "Фамилия";
             this.фамилияDataGridViewTextBoxColumn.Name = "фамилияDataGridViewTextBoxColumn";
             // 
-            // слайдерыDataGridViewTextBoxColumn
+            // формаОбратнойСвязиDataGridViewTextBoxColumn
             // 
-            this.слайдерыDataGridViewTextBoxColumn.DataPropertyName = "Слайдеры";
-            this.слайдерыDataGridViewTextBoxColumn.HeaderText = "Слайдеры";
-            this.слайдерыDataGridViewTextBoxColumn.Name = "слайдерыDataGridViewTextBoxColumn";
+            this.формаОбратнойСвязиDataGridViewTextBoxColumn.DataPropertyName = "Форма обратной связи";
+            this.формаОбратнойСвязиDataGridViewTextBoxColumn.HeaderText = "Форма обратной связи";
+            this.формаОбратнойСвязиDataGridViewTextBoxColumn.Name = "формаОбратнойСвязиDataGridViewTextBoxColumn";
             // 
-            // анимированныеБлокиDataGridViewTextBoxColumn
+            // настройкаПочтыDataGridViewTextBoxColumn
             // 
-            this.анимированныеБлокиDataGridViewTextBoxColumn.DataPropertyName = "Анимированные блоки";
-            this.анимированныеБлокиDataGridViewTextBoxColumn.HeaderText = "Анимированные блоки";
-            this.анимированныеБлокиDataGridViewTextBoxColumn.Name = "анимированныеБлокиDataGridViewTextBoxColumn";
+            this.настройкаПочтыDataGridViewTextBoxColumn.DataPropertyName = "Настройка почты";
+            this.настройкаПочтыDataGridViewTextBoxColumn.HeaderText = "Настройка почты";
+            this.настройкаПочтыDataGridViewTextBoxColumn.Name = "настройкаПочтыDataGridViewTextBoxColumn";
             // 
-            // локализацияDataGridViewTextBoxColumn
+            // онлайнЧатDataGridViewTextBoxColumn
             // 
-            this.локализацияDataGridViewTextBoxColumn.DataPropertyName = "Локализация";
-            this.локализацияDataGridViewTextBoxColumn.HeaderText = "Локализация";
-            this.локализацияDataGridViewTextBoxColumn.Name = "локализацияDataGridViewTextBoxColumn";
-            // 
-            // сложнаяСтруктураDataGridViewTextBoxColumn
-            // 
-            this.сложнаяСтруктураDataGridViewTextBoxColumn.DataPropertyName = "Сложная структура";
-            this.сложнаяСтруктураDataGridViewTextBoxColumn.HeaderText = "Сложная структура";
-            this.сложнаяСтруктураDataGridViewTextBoxColumn.Name = "сложнаяСтруктураDataGridViewTextBoxColumn";
-            // 
-            // геопривязкаDataGridViewTextBoxColumn
-            // 
-            this.геопривязкаDataGridViewTextBoxColumn.DataPropertyName = "Геопривязка";
-            this.геопривязкаDataGridViewTextBoxColumn.HeaderText = "Геопривязка";
-            this.геопривязкаDataGridViewTextBoxColumn.Name = "геопривязкаDataGridViewTextBoxColumn";
+            this.онлайнЧатDataGridViewTextBoxColumn.DataPropertyName = "Онлайн чат";
+            this.онлайнЧатDataGridViewTextBoxColumn.HeaderText = "Онлайн чат";
+            this.онлайнЧатDataGridViewTextBoxColumn.Name = "онлайнЧатDataGridViewTextBoxColumn";
             // 
             // ценаDataGridViewTextBoxColumn
             // 
@@ -135,18 +119,18 @@
             this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
             // 
-            // DataGridVerstka
+            // DataGridModules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 180);
+            this.ClientSize = new System.Drawing.Size(766, 178);
             this.Controls.Add(this.dataGridView2);
-            this.Name = "DataGridVerstka";
-            this.Text = "DataGridVerstka";
-            this.Load += new System.EventHandler(this.DataGridVerstka_Load);
+            this.Name = "DataGridModules";
+            this.Text = "DataGridModules";
+            this.Load += new System.EventHandler(this.DataGridModules_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.версткаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.модулиBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -155,16 +139,14 @@
 
         private System.Windows.Forms.DataGridView dataGridView2;
         private bdDataSet bdDataSet;
-        private System.Windows.Forms.BindingSource версткаBindingSource;
-        private bdDataSetTableAdapters.ВерсткаTableAdapter версткаTableAdapter;
+        private System.Windows.Forms.BindingSource модулиBindingSource;
+        private bdDataSetTableAdapters.МодулиTableAdapter модулиTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn имяDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn фамилияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn слайдерыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn анимированныеБлокиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn локализацияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn сложнаяСтруктураDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn геопривязкаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn формаОбратнойСвязиDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn настройкаПочтыDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn онлайнЧатDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
     }
 }
