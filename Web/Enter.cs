@@ -29,7 +29,7 @@ namespace Web
                 GlobalTrash.Username = textBoxName.Text;
                 GlobalTrash.Fam = textBoxFirstName.Text;
                 this.Hide();
-                Form2 frm = new Form2();
+                MainForm frm = new MainForm();
                frm.Show();
             }
 
