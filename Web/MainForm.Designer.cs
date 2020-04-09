@@ -74,6 +74,10 @@
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SEO.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -471,6 +475,10 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.button12);
+            this.tabPage4.Controls.Add(this.button11);
+            this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Controls.Add(this.checkBox11);
             this.tabPage4.Controls.Add(this.checkBox10);
             this.tabPage4.Controls.Add(this.checkBox9);
@@ -527,7 +535,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(9, 44);
+            this.checkBox8.Location = new System.Drawing.Point(8, 6);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(48, 17);
             this.checkBox8.TabIndex = 15;
@@ -537,7 +545,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(9, 67);
+            this.checkBox9.Location = new System.Drawing.Point(8, 29);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(166, 17);
             this.checkBox9.TabIndex = 16;
@@ -547,7 +555,7 @@
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(9, 91);
+            this.checkBox10.Location = new System.Drawing.Point(8, 53);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(80, 17);
             this.checkBox10.TabIndex = 17;
@@ -557,12 +565,47 @@
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(9, 114);
+            this.checkBox11.Location = new System.Drawing.Point(8, 76);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(71, 17);
             this.checkBox11.TabIndex = 18;
             this.checkBox11.Text = "Реклама";
             this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(8, 98);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(89, 43);
+            this.button10.TabIndex = 19;
+            this.button10.Text = "Рассчитать";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(8, 196);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(89, 43);
+            this.button11.TabIndex = 20;
+            this.button11.Text = "Открыть бд";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(8, 147);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(89, 43);
+            this.button12.TabIndex = 21;
+            this.button12.Text = "Заказать";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(103, 98);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(110, 43);
+            this.textBox5.TabIndex = 22;
             // 
             // MainForm
             // 
@@ -640,5 +683,9 @@
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
     }
 }
